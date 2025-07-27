@@ -2,24 +2,28 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Población de Colombia</title>
+  <title>Población</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      font-size: 2em;
+      margin: 0;
       background-color: white;
-      color: #1a73e8;
-      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    #population {
+      font-family: Arial, sans-serif;
+      font-size: 4em;
+      color: #f4c542; /* Color del logo (amarillo huevo) */
     }
   </style>
 </head>
 <body>
-  <h2>Habitantes de Colombia (estimado en tiempo real)</h2>
   <div id="population">Cargando...</div>
 
   <script>
-    const initialPopulation = 52200000; // Estimación base (ajústala si lo deseas)
+    const initialPopulation = 52200000;
     const startTime = new Date("July 1, 2025 00:00:00").getTime();
     const secondsPerPerson = 40;
 
